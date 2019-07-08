@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.primer.bryanalvarez.sige.Fragments.Fragment_Ver_Novedades">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Ver Novedades"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/textView45"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/et_buscar_ClienteFiltro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Buscar"
+                tools:layout_editor_absoluteX="106dp"
+                tools:layout_editor_absoluteY="261dp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerClienteFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewNovedades"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

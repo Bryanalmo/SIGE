@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Serial:"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_list_view_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="1111"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Cliente:"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_list_view_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Campo"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Modelo:"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_list_view_modelo_marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca - modelo"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Horometro:"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_list_view_horometro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presiona para ver más"
+            android:textStyle="italic"
+            android:textSize="10dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

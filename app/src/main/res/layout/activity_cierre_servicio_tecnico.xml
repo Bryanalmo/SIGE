@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.primer.bryanalvarez.sige.Activities.CierreServicioTecnicoActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/linearLayout2"
+            android:layout_marginStart="15dp">
+
+            <EditText
+                android:id="@+id/et_hora_fin_dialog"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Hora Fin" />
+
+            <ImageButton
+                android:id="@+id/ib_obtener_hora_fin_dialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:background="@mipmap/ic_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/linearLayout"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <EditText
+                android:id="@+id/et_fecha_fin_dialog"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Fecha Fin" />
+
+            <ImageButton
+                android:id="@+id/ib_obtener_fecha_fin_dialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:background="@mipmap/ic_date" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Cierre de servicio tecnico"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Ingrese las referencias de los productos utilizados durante el servicio tecnico. *Las referencias deben ir separadas por una coma (,)*"/>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/mtv_referencias"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Referencias"
+                tools:layout_editor_absoluteX="106dp"
+                tools:layout_editor_absoluteY="261dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_cierre_st"
+            android:layout_width="318dp"
+            android:layout_height="51dp"
+            android:background="@color/colorAccent"
+            android:text="Enviar"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/linearLayout3"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView46"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicio tecnico numero: "/>
+
+            <TextView
+                android:id="@+id/tv_id_servicio_tecnico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identificador" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <EditText
+                android:id="@+id/et_descripcion_cierre_st"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:hint="Descripción cierre" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

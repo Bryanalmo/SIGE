@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_fecha_inicio_dialog"
+            android:layout_margin="10dp"
+            android:layout_width="280dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Inicio" />
+        <ImageButton
+            android:id="@+id/ib_obtener_fecha_inicio_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/ic_date"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_hora_inicio_dialog"
+            android:layout_margin="10dp"
+            android:layout_width="280dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:hint="Hora Inicio" />
+        <ImageButton
+            android:id="@+id/ib_obtener_hora_inicio_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/ic_time"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

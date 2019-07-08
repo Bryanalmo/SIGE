@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Maquinaria"
+            android:id="@+id/menu_maquinas"
+            android:icon="@mipmap/ic_maquinas"></item>
+
+        <item
+            android:title="Novedades"
+            android:id="@+id/menu_novedades"
+            android:icon="@mipmap/ic_novedad"></item>
+
+        <item
+            android:title="Servicio Tecnico"
+            android:id="@+id/menu_servicio_tecnico"
+            android:icon="@mipmap/ic_servicio_tecncio"></item>
+
+        <item
+            android:title="Revision de maquina"
+            android:id="@+id/menu_revision_maquina"
+            android:icon="@mipmap/ic_revision"></item>
+
+    </group>
+
+    <item android:title="Otras opciones">
+
+        <menu>
+            <item
+                android:title="Cerrar Sesión"
+                android:id="@+id/menu_cerrar"
+                android:icon="@mipmap/ic_cerrar_sesion"></item>
+        </menu>
+
+    </item>
+
+</menu>
